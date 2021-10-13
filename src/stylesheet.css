@@ -1,0 +1,135 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    border-radius: 5px;  
+
+}
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: rgb(97, 93, 93);
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+  .topofpagespace{
+    margin: 100px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+  
+  .loginarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+  }
+
+  .loginbox{
+    height: 200px;
+    width: 400px;
+  
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 7px;
+    
+    background-color: gray;
+
+  }
+  .login{
+   margin: 1px;
+   height: 200px;
+   width: 400px;
+    
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+
+  }
+ 
+  #logintext{
+    margin: 35px;
+    font-size: 30px;
+  }
+
+  #userinput{
+ width: 200px;
+  margin: 5px;
+
+}
+#test{
+  width: 200px;
+}
+.searchhold{
+  display: block;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+.searchview{
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+
+margin: 20px;
+
+justify-content: space-evenly;
+
+
+
+background-color: gray;
+box-shadow: 5px 5px 5px gray;
+border-color: black;
+border-width: thick;
+border-radius: 10px 10px 10px;
+}
+#imgblk{
+ width: 125px;
+  
+ 
+ margin: 5px;
+ 
+ display: block;
+  justify-content: center;
+  align-self: flex-start;
+  align-content: center;
+  text-align: center;
+
+}
+#image{
+ border-radius: 5px;
+ border-color: black;
+ border: 2px solid black;
+ box-shadow: 0px 10px 10px 0px black;
+}
+.searchview img:hover{
+margin: 5px;
+  width: 130px;
+height: 130px;
+
+}
