@@ -17,15 +17,15 @@ const pool = new Pool({
     connectionString: process.env.DATABASE_URL
 })
 
-app.post('/users', (req, res) => {
-    let userInput = req.body
-    const { username, usersearches, title } = userInput
+// app.post('/users', (req, res) => {
+//     let userInput = req.body
+//     const { username, usersearches, title } = userInput
 
-    pool.query('INSERT INTO siteusers VALUES (default,$1,ARRAY[$2],$3) RETURNING *', [username, usersearches, title])
+//     pool.query('INSERT INTO siteusers VALUES (default,$1,ARRAY[$2],$3) RETURNING *', [username, usersearches, title])
 
-        .then(data => res.send(data.rows))
-        .catch(err => res.status(500).send(console.log(req.body)))
-})
+//         .then(data => res.send(data.rows))
+//         .catch(err => res.status(500).send(console.log(req.body)))
+// })
 
 
 
