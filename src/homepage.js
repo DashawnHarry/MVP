@@ -45,7 +45,7 @@ const homepageCreation = (data) => {
 
 
 
-            console.log($.get('/', (data) => { console.log(data) }));
+            console.log($.get('/users', (data) => { console.log(data) }));
         })
 
         console.log(index)
