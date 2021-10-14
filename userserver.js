@@ -1,13 +1,17 @@
-const { config } = require('dotenv')
+const path = require('path')
 const express = require('express')
+const { config } = require('dotenv')
 const { Pool } = require('pg')
+var cors = require('cors')
 const app = express()
 config()
 
 const port = process.env.PORT
 
 app.use(express.json())
-app.use(express.static('src'))
+app.use(express.static(path.join(__dirname, '/src')))
+
+
 
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL
@@ -30,8 +34,13 @@ app.post('/users', (req, res) => {
 app.get('/users', (req, res) => {
     pool.query('SELECT * FROM siteusers',)
 
-        .then(data => res.send(data.rows))
+        .then(data => res.send(data.rows
+        ))
         .catch(err => res.status(500).send(console.log(err)))
+})
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'src/index.html'));
 })
 
 // //PETS UPDATE

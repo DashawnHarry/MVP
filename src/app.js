@@ -14,11 +14,11 @@ $("#test").click(() => {
     } else {
         $('#headbarbut').text(`Welcome ${username}`)
         $(".loginarea").hide()
+        userclicked();
+
 
     }
 
-    $('.userbox').show()
-    userclicked();
 
 })
 

@@ -11,11 +11,12 @@ let settings = {
 let usersearch = $("#searchinput").val()
 let userurls = []
 let usertitles = []
-
-
+let username
 
 
 const homepageCreation = (data) => {
+    $('<div class=userbox>Your Saves</div>').prependTo('.usersaveboxhold')
+    username = $('#headbarbut').text()
 
     for (let index = 0; index < data['response']['hits'].length; index++) {
         let songimage = data['response']['hits'][index]['result']['song_art_image_url']
@@ -27,17 +28,24 @@ const homepageCreation = (data) => {
 
 
         $(`.imageblock${index}`).prepend(`<img id=image${index} src=${songimage} width=125 height=125>`)
-        $(`.imageblock${index}`).append(`<p>${songTitle}</p>`)
+        $(`.imageblock${index}`).append(`<p id=songtitle${index}>${songTitle}</p>`)
         $(`.imageblock${index}`).append(`<a href=${artisturl}>${artistName}</a>`)
 
         $(`#imgblk${index}`).click(() => {
+
+
+
             userurls.push($(`#image${index}`).attr('src'))
 
+            usertitles.push($(`#songtitle${index}`).text())
+
+            $('.userbox').show()
+
+            $(`.imageblock${index}`).prependTo(`.userbox`)
 
 
 
-
-            console.log(userurls);
+            console.log($.get('/users', (data) => { console.log(data) }));
         })
 
         console.log(index)
