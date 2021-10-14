@@ -45,7 +45,7 @@ const homepageCreation = (data) => {
 
 
 
-            console.log($.get('https://fast-fortress-34050.herokuapp.com/users', (data) => { console.log(data) }));
+            console.log($.get('/', (data) => { console.log(data) }));
         })
 
         console.log(index)
