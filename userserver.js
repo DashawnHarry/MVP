@@ -14,7 +14,10 @@ app.use(express.static(path.join(__dirname, '/src')))
 
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+    }
 })
 
 // app.post('/users', (req, res) => {
