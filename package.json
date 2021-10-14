@@ -2,6 +2,7 @@
   "name": "nodemon",
   "version": "1.0.0",
   "description": "",
+  "main": "userserver.js",
   "type": "commonjs",
   "scripts": {
     "lint": "eslint",
