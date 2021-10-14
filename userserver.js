@@ -14,21 +14,23 @@ app.use(express.static(path.join(__dirname, '/src')))
 
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
+
+    connectionString: process.env.DATABASE_URL
+
     ssl: {
         rejectUnauthorized: false
     }
 })
 
-// app.post('/users', (req, res) => {
-//     let userInput = req.body
-//     const { username, usersearches, title } = userInput
+app.post('/user', (req, res) => {
+    let userInput = req.body
+    const { name, usersearches, title } = userInput
 
-//     pool.query('INSERT INTO siteusers VALUES (default,$1,ARRAY[$2],$3) RETURNING *', [username, usersearches, title])
+    pool.query('INSERT INTO siteusers VALUES (default,$1,ARRAY[$2],$3) RETURNING *', [name, usersearches, title])
 
-//         .then(data => res.send(data.rows))
-//         .catch(err => res.status(500).send(console.log(req.body)))
-// })
+        .then(data => res.send(console.log(userInput)))
+        .catch(err => res.status(500).send(console.log(req.body)))
+})
 
 
 

@@ -12,6 +12,7 @@ $("#test").click(() => {
     if (username.split("").length <= 0) {
         $('#usernametext').text('Please enter a username')
     } else {
+
         $('#headbarbut').text(`Welcome ${username}`)
         $(".loginarea").hide()
         userclicked();

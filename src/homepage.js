@@ -43,9 +43,15 @@ const homepageCreation = (data) => {
 
             $(`.imageblock${index}`).prependTo(`.userbox`)
 
-
-
+            $.ajax({
+                method: "POST",
+                url: "/user",
+                data: JSON.stringify({ name: username, usersearches: userurls, title: $(`#songtitle${index}`).text() }),
+                contentType: "application/json"
+            })
+            //$.post('/user', { name: username, usersearches: userurls, title: $(`#songtitle${index}`).text() }, (data) => console.log(data))
             $.get('/users', (data) => { console.log(data) })
+
         })
 
         console.log(index)
@@ -61,6 +67,13 @@ const homepageCreation = (data) => {
 
 
 export const userclicked = () => {
+    username = $('#headbarbut').text()
+
+
+
+
+
+
     $(".searchhold").append('<input type=text id=searchinput>')
     $(".searchhold").append('<button id=searchbutton>Search</button>')
     $.ajax(settings).then((result) => {
