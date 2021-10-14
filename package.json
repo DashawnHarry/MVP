@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "lint": "eslint",
-    "start": "nodemon src/userserver.js",
+    "start": "node userserver.js",
     "test": "mocha"
   },
   "repository": {
