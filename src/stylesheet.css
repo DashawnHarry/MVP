@@ -108,7 +108,7 @@ border-color: black;
 border-width: thick;
 border-radius: 10px 10px 10px;
 }
-#imgblk{
+#imgblk0{
  width: 125px;
   
  
@@ -121,12 +121,187 @@ border-radius: 10px 10px 10px;
   text-align: center;
 
 }
-#image{
+#image0{
  border-radius: 5px;
  border-color: black;
  border: 2px solid black;
  box-shadow: 0px 10px 10px 0px black;
 }
+#imgblk1{
+  width: 125px;
+   
+  
+  margin: 5px;
+  
+  display: block;
+   justify-content: center;
+   align-self: flex-start;
+   align-content: center;
+   text-align: center;
+ 
+ }
+ #image1{
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px 0px black;
+ }
+ #imgblk2{
+  width: 125px;
+   
+  
+  margin: 5px;
+  
+  display: block;
+   justify-content: center;
+   align-self: flex-start;
+   align-content: center;
+   text-align: center;
+ 
+ }
+ #image2{
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px 0px black;
+ }
+ #imgblk3{
+  width: 125px;
+   
+  
+  margin: 5px;
+  
+  display: block;
+   justify-content: center;
+   align-self: flex-start;
+   align-content: center;
+   text-align: center;
+ 
+ }
+ #image3{
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px 0px black;
+ }
+ #imgblk4{
+  width: 125px;
+   
+  
+  margin: 5px;
+  
+  display: block;
+   justify-content: center;
+   align-self: flex-start;
+   align-content: center;
+   text-align: center;
+ 
+ }
+ #image4{
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px 0px black;
+ }
+ #imgblk5{
+  width: 125px;
+   
+  
+  margin: 5px;
+  
+  display: block;
+   justify-content: center;
+   align-self: flex-start;
+   align-content: center;
+   text-align: center;
+ 
+ }
+ #image5{
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px 0px black;
+ }
+ #imgblk6{
+  width: 125px;
+   
+  
+  margin: 5px;
+  
+  display: block;
+   justify-content: center;
+   align-self: flex-start;
+   align-content: center;
+   text-align: center;
+ 
+ }
+ #image6{
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px 0px black;
+ }
+ #imgblk7{
+  width: 125px;
+   
+  
+  margin: 5px;
+  
+  display: block;
+   justify-content: center;
+   align-self: flex-start;
+   align-content: center;
+   text-align: center;
+ 
+ }
+ #image7{
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px 0px black;
+ }
+ #imgblk8{
+  width: 125px;
+   
+  
+  margin: 5px;
+  
+  display: block;
+   justify-content: center;
+   align-self: flex-start;
+   align-content: center;
+   text-align: center;
+ 
+ }
+ #image8{
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px 0px black;
+ }
+ #imgblk9{
+  width: 125px;
+   
+  
+  margin: 5px;
+  
+  display: block;
+   justify-content: center;
+   align-self: flex-start;
+   align-content: center;
+   text-align: center;
+ }
+ #image9{
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid black;
+  box-shadow: 0px 10px 10px 0px black;
+ }
+
+
+
+
+
 .searchview img:hover{
 margin: 5px;
   width: 130px;
