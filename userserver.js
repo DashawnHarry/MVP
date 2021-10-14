@@ -40,6 +40,11 @@ app.get('/users', (req, res) => {
 })
 
 app.get('/', (req, res) => {
+    pool.query('SELECT * FROM siteusers',)
+
+        .then(data => res.send(data.rows
+        ))
+        .catch(err => res.status(500).send(console.log(err)))
     res.sendFile(path.join(__dirname, 'src/index.html'));
 })
 
